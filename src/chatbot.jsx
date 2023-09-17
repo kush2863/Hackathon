@@ -71,7 +71,7 @@ function Chatbot() {
                     {message.file.name}
                   </a>
                 </div>
-              )}
+              )}  
             </div>
           ))}
         </div>
@@ -89,11 +89,9 @@ function Chatbot() {
                 variant="contained"
                 component="label"
                 className="file"
-                htmlFor="filenput"
+                htmlFor="fileinput"
               >
-            
                 Choose File
-                <Button/>
                 <input
                   id="fileInput"
                   type="file"
@@ -107,6 +105,7 @@ function Chatbot() {
           <div className="send">
             <Stack direction="row" spacing={2}>
               <Button
+                onClick={sendMessage}
                 type="submit"
                 variant="contained"
                 component="label"
