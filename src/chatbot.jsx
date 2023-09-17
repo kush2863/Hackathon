@@ -89,8 +89,11 @@ function Chatbot() {
                 variant="contained"
                 component="label"
                 className="file"
+                htmlFor="filenput"
               >
+            
                 Choose File
+                <Button/>
                 <input
                   id="fileInput"
                   type="file"
